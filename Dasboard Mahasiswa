@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mahasiswa - Boash University</title>
+
+    <style>
+      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.stat-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-top: 4px solid #1e3a8a;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-top: 5px;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e2e8f0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <h1>BOASH University</h1>
+        <nav>
+            <a href="#profil">Profil</a>
+            <a href="#akademik">Akademik</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Bagian Profil -->
+        <section id="profil" class="card profile-card">
+            <h2>Dewinta Nurmaulidina</h2>
+            <p>NIM: 25903460008</p>
+            <p>Program Studi: Teknologi Rekayasa Multimedia</p>
+        </section>
+
+        <!-- Bagian Data Akademik (4 Kartu Statistik) -->
+        <section id="akademik">
+            <h2>Data Akademik</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>IPK</h3>
+                    <p class="stat-value">3.89</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Semester</h3>
+                    <p class="stat-value">3</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total SKS</h3>
+                    <p class="stat-value">57</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Keahlian -->
+        <section id="keahlian" class="card">
+            <h2>Keahlian</h2>
+            <ul class="skills-list">
+                <li>Desain karakter</li>
+                <li>Digital Ilustrator</li>
+                <li>Desain UI/UX</li>
+            </ul>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="card">
+            <h2>Kontak</h2>
+            <p><strong>Email:</strong> dewintanurmaulidina28@gmail.com</p>
+            <p><strong>Alamat:</strong> Bogor, Jawa Barat</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BOASH University - Dashboard Mahasiswa</p>
+    </footer>
+
+</body>
+</html>
